@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		184318D9253660420040F3E1 /* LoLApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184318CF253660420040F3E1 /* LoLApi.framework */; };
-		184318DE253660420040F3E1 /* LoLApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184318DD253660420040F3E1 /* LoLApiTests.swift */; };
 		184318E0253660420040F3E1 /* LoLApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 184318D2253660420040F3E1 /* LoLApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		184318EB253663620040F3E1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184318EA253663620040F3E1 /* Request.swift */; };
+		1853FC202539C88400301AA8 /* Summoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853FC1F2539C88400301AA8 /* Summoner.swift */; };
+		1853FC222539DD4200301AA8 /* LolApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853FC212539DD4200301AA8 /* LolApi.swift */; };
+		1853FC262539DE4C00301AA8 /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853FC252539DE4C00301AA8 /* ApiTests.swift */; };
+		1853FC282539E2A000301AA8 /* SummonerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853FC272539E2A000301AA8 /* SummonerApi.swift */; };
+		1853FC2A2539F18400301AA8 /* LolServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853FC292539F18300301AA8 /* LolServer.swift */; };
+		1853FC2C2539FF7000301AA8 /* SummonerApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853FC2B2539FF7000301AA8 /* SummonerApiTests.swift */; };
+		1853FC2E253A04A700301AA8 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853FC2D253A04A700301AA8 /* env.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +34,15 @@
 		184318D2253660420040F3E1 /* LoLApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoLApi.h; sourceTree = "<group>"; };
 		184318D3253660420040F3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184318D8253660420040F3E1 /* LoLApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoLApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		184318DD253660420040F3E1 /* LoLApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoLApiTests.swift; sourceTree = "<group>"; };
 		184318DF253660420040F3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184318EA253663620040F3E1 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		1853FC1F2539C88400301AA8 /* Summoner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summoner.swift; sourceTree = "<group>"; };
+		1853FC212539DD4200301AA8 /* LolApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolApi.swift; sourceTree = "<group>"; };
+		1853FC252539DE4C00301AA8 /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
+		1853FC272539E2A000301AA8 /* SummonerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonerApi.swift; sourceTree = "<group>"; };
+		1853FC292539F18300301AA8 /* LolServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolServer.swift; sourceTree = "<group>"; };
+		1853FC2B2539FF7000301AA8 /* SummonerApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummonerApiTests.swift; sourceTree = "<group>"; };
+		1853FC2D253A04A700301AA8 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +85,12 @@
 		184318D1253660420040F3E1 /* LoLApi */ = {
 			isa = PBXGroup;
 			children = (
-				184318D2253660420040F3E1 /* LoLApi.h */,
+				1853FC212539DD4200301AA8 /* LolApi.swift */,
+				1853FC272539E2A000301AA8 /* SummonerApi.swift */,
+				1853FC1D2539C85500301AA8 /* Models */,
+				184318F425366A830040F3E1 /* Network */,
 				184318D3253660420040F3E1 /* Info.plist */,
+				184318D2253660420040F3E1 /* LoLApi.h */,
 			);
 			path = LoLApi;
 			sourceTree = "<group>";
@@ -80,10 +98,37 @@
 		184318DC253660420040F3E1 /* LoLApiTests */ = {
 			isa = PBXGroup;
 			children = (
-				184318DD253660420040F3E1 /* LoLApiTests.swift */,
+				184318F525366AD50040F3E1 /* UnitTests */,
 				184318DF253660420040F3E1 /* Info.plist */,
+				1853FC2D253A04A700301AA8 /* env.swift */,
 			);
 			path = LoLApiTests;
+			sourceTree = "<group>";
+		};
+		184318F425366A830040F3E1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				184318EA253663620040F3E1 /* Request.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		184318F525366AD50040F3E1 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				1853FC252539DE4C00301AA8 /* ApiTests.swift */,
+				1853FC2B2539FF7000301AA8 /* SummonerApiTests.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		1853FC1D2539C85500301AA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1853FC1F2539C88400301AA8 /* Summoner.swift */,
+				1853FC292539F18300301AA8 /* LolServer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +193,7 @@
 				TargetAttributes = {
 					184318CE253660420040F3E1 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 					184318D7253660420040F3E1 = {
 						CreatedOnToolsVersion = 11.7;
@@ -195,6 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1853FC282539E2A000301AA8 /* SummonerApi.swift in Sources */,
+				184318EB253663620040F3E1 /* Request.swift in Sources */,
+				1853FC202539C88400301AA8 /* Summoner.swift in Sources */,
+				1853FC222539DD4200301AA8 /* LolApi.swift in Sources */,
+				1853FC2A2539F18400301AA8 /* LolServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184318DE253660420040F3E1 /* LoLApiTests.swift in Sources */,
+				1853FC2C2539FF7000301AA8 /* SummonerApiTests.swift in Sources */,
+				1853FC2E253A04A700301AA8 /* env.swift in Sources */,
+				1853FC262539DE4C00301AA8 /* ApiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +393,7 @@
 		184318E4253660420040F3E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6QH22EX9AM;
@@ -356,6 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.LoLApi;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +419,7 @@
 		184318E5253660420040F3E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6QH22EX9AM;
@@ -388,6 +444,7 @@
 		184318E7253660420040F3E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QH22EX9AM;
 				INFOPLIST_FILE = LoLApiTests/Info.plist;
@@ -406,6 +463,7 @@
 		184318E8253660420040F3E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QH22EX9AM;
 				INFOPLIST_FILE = LoLApiTests/Info.plist;
