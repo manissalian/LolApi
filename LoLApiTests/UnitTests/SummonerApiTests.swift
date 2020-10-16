@@ -32,7 +32,24 @@ class SummonerApiTests: XCTestCase {
     func testGetSummonerByAccountId() throws {
         let expect = expectation(description: "Got summoner successfully")
 
-        lolApi.summoner.getSummonerByAccountId(accountId: "4CTJNXQHPPoZx49ph3aeffovrf9d3KQp_-2G8pDDZI3iLFs") { summoner in
+        lolApi.summoner.getSummonerByAccountId(id: "4CTJNXQHPPoZx49ph3aeffovrf9d3KQp_-2G8pDDZI3iLFs") { summoner in
+            if summoner == nil {
+                XCTFail("Error getting summoner")
+            }
+
+            expect.fulfill()
+        }
+
+        let result = XCTWaiter.wait(for: [expect], timeout: 10)
+        if result == XCTWaiter.Result.timedOut {
+            XCTFail("Timed out")
+        }
+    }
+
+    func testGetSummonerByPUUID() throws {
+        let expect = expectation(description: "Got summoner successfully")
+
+        lolApi.summoner.getSummonerByPUUID(id: "T-3Xrxnw2pZRU6icEp2BNZJ5SmOpjhVoJHRl73htK0ZeRjtvbDjv5B2VvcPl-oeIFUndBbmx6z7vWg") { summoner in
             if summoner == nil {
                 XCTFail("Error getting summoner")
             }

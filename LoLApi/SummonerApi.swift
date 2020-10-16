@@ -13,38 +13,36 @@ public struct SummonerApi {
     weak var lolApi: LolApi?
 
     public func getSummonerByName(name: String, completion: @escaping (_ summoner: Summoner?) -> Void) {
-        guard let lolApi = self.lolApi else {
-            completion(nil)
-            return
-        }
-
         let path = "/by-name/\(name)"
-        let urlString = "\(lolApi.host)/\(endPoint)\(path)"
 
-        self.getSummoner(urlString: urlString) { summoner in
+        self.getSummoner(path: path) { summoner in
             completion(summoner)
         }
     }
 
-    public func getSummonerByAccountId(accountId: String, completion: @escaping (_ summoner: Summoner?) -> Void) {
+    public func getSummonerByAccountId(id: String, completion: @escaping (_ summoner: Summoner?) -> Void) {
+        let path = "/by-account/\(id)"
+
+        self.getSummoner(path: path) { summoner in
+            completion(summoner)
+        }
+    }
+
+    public func getSummonerByPUUID(id: String, completion: @escaping (_ summoner: Summoner?) -> Void) {
+        let path = "/by-puuid/\(id)"
+
+        self.getSummoner(path: path) { summoner in
+            completion(summoner)
+        }
+    }
+
+    func getSummoner(path: String, completion: @escaping (_ summoner: Summoner?) -> Void) {
         guard let lolApi = self.lolApi else {
             completion(nil)
             return
         }
 
-        let path = "/by-account/\(accountId)"
-        let urlString = "\(lolApi.host)/\(endPoint)\(path)"
-
-        self.getSummoner(urlString: urlString) { summoner in
-            completion(summoner)
-        }
-    }
-
-    func getSummoner(urlString: String, completion: @escaping (_ summoner: Summoner?) -> Void) {
-        guard let lolApi = self.lolApi else {
-            completion(nil)
-            return
-        }
+        let urlString = "\(lolApi.host)/\(self.endPoint)\(path)"
 
         Request.httpGet(key: lolApi.apiKey, urlString: urlString) { data in
             guard let data = data else {
