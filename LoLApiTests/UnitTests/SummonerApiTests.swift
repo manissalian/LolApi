@@ -16,6 +16,7 @@ class SummonerApiTests: XCTestCase {
         let expectByName = expectation(description: "Got summoner successfully by name")
         let expectByAccountId = expectation(description: "Got summoner successfully by account id")
         let expectByPUUID = expectation(description: "Got summoner successfully by puuid")
+        let expectBySummonerId = expectation(description: "Got summoner successfully by summoner id")
 
         lolApi.summoner.getSummonerByName(name: "callbackfunction") { summoner in
             if summoner == nil {
@@ -41,7 +42,15 @@ class SummonerApiTests: XCTestCase {
             expectByPUUID.fulfill()
         }
 
-        let result = XCTWaiter.wait(for: [expectByName, expectByAccountId, expectByPUUID], timeout: 10)
+        lolApi.summoner.getSummonerBySummonerId(id: "Ek_o_6WjC31B24ZJtxaDjp37dO5Ksh8rGq319EyaPvHdgu0") { summoner in
+            if summoner == nil {
+                XCTFail("Error getting summoner by puuid")
+            }
+
+            expectBySummonerId.fulfill()
+        }
+
+        let result = XCTWaiter.wait(for: [expectByName, expectByAccountId, expectByPUUID, expectBySummonerId], timeout: 10)
         if result == XCTWaiter.Result.timedOut {
             XCTFail("Timed out")
         }

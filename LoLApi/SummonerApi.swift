@@ -36,6 +36,14 @@ public struct SummonerApi {
         }
     }
 
+    public func getSummonerBySummonerId(id: String, completion: @escaping (_ summoner: Summoner?) -> Void) {
+        let path = "/\(id)"
+
+        self.getSummoner(path: path) { summoner in
+            completion(summoner)
+        }
+    }
+
     func getSummoner(path: String, completion: @escaping (_ summoner: Summoner?) -> Void) {
         guard let lolApi = self.lolApi else {
             completion(nil)
