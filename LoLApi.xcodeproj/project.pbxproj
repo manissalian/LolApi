@@ -11,7 +11,7 @@
 		184318E0253660420040F3E1 /* LoLApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 184318D2253660420040F3E1 /* LoLApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184318EB253663620040F3E1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184318EA253663620040F3E1 /* Request.swift */; };
 		18433CBE253AEF2A00315D1B /* MatchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18433CBD253AEF2A00315D1B /* MatchApi.swift */; };
-		18433CC0253AF1F100315D1B /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18433CBF253AF1F100315D1B /* Match.swift */; };
+		18433CC0253AF1F100315D1B /* MatchReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18433CBF253AF1F100315D1B /* MatchReference.swift */; };
 		18433CC2253AF2A700315D1B /* Matchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18433CC1253AF2A700315D1B /* Matchlist.swift */; };
 		18433CC4253AF33500315D1B /* MatchApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18433CC3253AF33500315D1B /* MatchApiTests.swift */; };
 		1853FC202539C88400301AA8 /* Summoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853FC1F2539C88400301AA8 /* Summoner.swift */; };
@@ -41,7 +41,7 @@
 		184318DF253660420040F3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184318EA253663620040F3E1 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		18433CBD253AEF2A00315D1B /* MatchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchApi.swift; sourceTree = "<group>"; };
-		18433CBF253AF1F100315D1B /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		18433CBF253AF1F100315D1B /* MatchReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchReference.swift; sourceTree = "<group>"; };
 		18433CC1253AF2A700315D1B /* Matchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matchlist.swift; sourceTree = "<group>"; };
 		18433CC3253AF33500315D1B /* MatchApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchApiTests.swift; sourceTree = "<group>"; };
 		1853FC1F2539C88400301AA8 /* Summoner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summoner.swift; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 			children = (
 				1853FC1F2539C88400301AA8 /* Summoner.swift */,
 				1853FC292539F18300301AA8 /* LolServer.swift */,
-				18433CBF253AF1F100315D1B /* Match.swift */,
+				18433CBF253AF1F100315D1B /* MatchReference.swift */,
 				18433CC1253AF2A700315D1B /* Matchlist.swift */,
 			);
 			path = Models;
@@ -260,7 +260,7 @@
 				1853FC202539C88400301AA8 /* Summoner.swift in Sources */,
 				1853FC222539DD4200301AA8 /* LolApi.swift in Sources */,
 				1853FC2A2539F18400301AA8 /* LolServer.swift in Sources */,
-				18433CC0253AF1F100315D1B /* Match.swift in Sources */,
+				18433CC0253AF1F100315D1B /* MatchReference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

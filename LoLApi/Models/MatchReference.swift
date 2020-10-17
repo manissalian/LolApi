@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Match: Decodable {
+public struct MatchReference: Decodable {
     public var gameId: Int
     public var role: String
     public var season: Int

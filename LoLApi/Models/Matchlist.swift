@@ -12,9 +12,9 @@ public struct Matchlist: Decodable {
     public var startIndex: Int
     public var totalGames: Int
     public var endIndex: Int
-    public var matches: [Match]
+    public var matches: [MatchReference]
 
-    public init(startIndex: Int, totalGames: Int, endIndex: Int, matches: [Match]) {
+    public init(startIndex: Int, totalGames: Int, endIndex: Int, matches: [MatchReference]) {
         self.startIndex = startIndex
         self.totalGames = totalGames
         self.endIndex = endIndex
