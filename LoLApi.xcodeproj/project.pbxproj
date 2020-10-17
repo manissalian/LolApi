@@ -10,6 +10,10 @@
 		184318D9253660420040F3E1 /* LoLApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184318CF253660420040F3E1 /* LoLApi.framework */; };
 		184318E0253660420040F3E1 /* LoLApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 184318D2253660420040F3E1 /* LoLApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184318EB253663620040F3E1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184318EA253663620040F3E1 /* Request.swift */; };
+		18433CBE253AEF2A00315D1B /* MatchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18433CBD253AEF2A00315D1B /* MatchApi.swift */; };
+		18433CC0253AF1F100315D1B /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18433CBF253AF1F100315D1B /* Match.swift */; };
+		18433CC2253AF2A700315D1B /* Matchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18433CC1253AF2A700315D1B /* Matchlist.swift */; };
+		18433CC4253AF33500315D1B /* MatchApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18433CC3253AF33500315D1B /* MatchApiTests.swift */; };
 		1853FC202539C88400301AA8 /* Summoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853FC1F2539C88400301AA8 /* Summoner.swift */; };
 		1853FC222539DD4200301AA8 /* LolApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853FC212539DD4200301AA8 /* LolApi.swift */; };
 		1853FC262539DE4C00301AA8 /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853FC252539DE4C00301AA8 /* ApiTests.swift */; };
@@ -36,6 +40,10 @@
 		184318D8253660420040F3E1 /* LoLApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoLApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184318DF253660420040F3E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184318EA253663620040F3E1 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		18433CBD253AEF2A00315D1B /* MatchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchApi.swift; sourceTree = "<group>"; };
+		18433CBF253AF1F100315D1B /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		18433CC1253AF2A700315D1B /* Matchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matchlist.swift; sourceTree = "<group>"; };
+		18433CC3253AF33500315D1B /* MatchApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchApiTests.swift; sourceTree = "<group>"; };
 		1853FC1F2539C88400301AA8 /* Summoner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summoner.swift; sourceTree = "<group>"; };
 		1853FC212539DD4200301AA8 /* LolApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolApi.swift; sourceTree = "<group>"; };
 		1853FC252539DE4C00301AA8 /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
@@ -87,6 +95,7 @@
 			children = (
 				1853FC212539DD4200301AA8 /* LolApi.swift */,
 				1853FC272539E2A000301AA8 /* SummonerApi.swift */,
+				18433CBD253AEF2A00315D1B /* MatchApi.swift */,
 				1853FC1D2539C85500301AA8 /* Models */,
 				184318F425366A830040F3E1 /* Network */,
 				184318D3253660420040F3E1 /* Info.plist */,
@@ -118,6 +127,7 @@
 			children = (
 				1853FC252539DE4C00301AA8 /* ApiTests.swift */,
 				1853FC2B2539FF7000301AA8 /* SummonerApiTests.swift */,
+				18433CC3253AF33500315D1B /* MatchApiTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -127,6 +137,8 @@
 			children = (
 				1853FC1F2539C88400301AA8 /* Summoner.swift */,
 				1853FC292539F18300301AA8 /* LolServer.swift */,
+				18433CBF253AF1F100315D1B /* Match.swift */,
+				18433CC1253AF2A700315D1B /* Matchlist.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,9 +255,12 @@
 			files = (
 				1853FC282539E2A000301AA8 /* SummonerApi.swift in Sources */,
 				184318EB253663620040F3E1 /* Request.swift in Sources */,
+				18433CBE253AEF2A00315D1B /* MatchApi.swift in Sources */,
+				18433CC2253AF2A700315D1B /* Matchlist.swift in Sources */,
 				1853FC202539C88400301AA8 /* Summoner.swift in Sources */,
 				1853FC222539DD4200301AA8 /* LolApi.swift in Sources */,
 				1853FC2A2539F18400301AA8 /* LolServer.swift in Sources */,
+				18433CC0253AF1F100315D1B /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18433CC4253AF33500315D1B /* MatchApiTests.swift in Sources */,
 				1853FC2C2539FF7000301AA8 /* SummonerApiTests.swift in Sources */,
 				1853FC2E253A04A700301AA8 /* env.swift in Sources */,
 				1853FC262539DE4C00301AA8 /* ApiTests.swift in Sources */,

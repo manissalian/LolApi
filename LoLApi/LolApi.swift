@@ -15,8 +15,13 @@ public class LolApi {
         self.summonerApi.lolApi = self
         return summonerApi
     }
+    public var match: MatchApi {
+        self.matchApi.lolApi = self
+        return matchApi
+    }
 
     private var summonerApi = SummonerApi()
+    private var matchApi = MatchApi()
 
     var host: String {
         return "https://\(self.server.rawValue).api.riotgames.com"

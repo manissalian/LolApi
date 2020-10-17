@@ -12,7 +12,7 @@ import LoLApi
 class SummonerApiTests: XCTestCase {
     let lolApi = LolApi(key: TESTING_API_KEY, server: LolServer.EUW)
 
-    func testGetSummonerByName() throws {
+    func testGetSummoner() throws {
         let expectByName = expectation(description: "Got summoner successfully by name")
         let expectByAccountId = expectation(description: "Got summoner successfully by account id")
         let expectByPUUID = expectation(description: "Got summoner successfully by puuid")
