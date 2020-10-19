@@ -20,6 +20,14 @@ public struct MatchApi {
         }
     }
 
+    public func getMatchById(id: String, completion: @escaping (_ summoner: Match?) -> Void) {
+        let path = "/matches/\(id)"
+
+        self.getMatch(path: path) { match in
+            completion(match)
+        }
+    }
+
     func getMatchlist(path: String, parameters: MatchlistParameters?, completion: @escaping (_ summoner: Matchlist?) -> Void) {
         guard let lolApi = self.lolApi else {
             completion(nil)
@@ -41,6 +49,29 @@ public struct MatchApi {
             do {
                 let matchlist = try JSONDecoder().decode(Matchlist.self, from: data)
                 completion(matchlist)
+            } catch {
+                completion(nil)
+            }
+        }
+    }
+
+    func getMatch(path: String, completion: @escaping (_ summoner: Match?) -> Void) {
+        guard let lolApi = self.lolApi else {
+            completion(nil)
+            return
+        }
+
+        let urlString = "\(lolApi.host)/\(self.endPoint)\(path)"
+
+        Request.httpGet(key: lolApi.apiKey, urlString: urlString) { data in
+            guard let data = data else {
+                completion(nil)
+                return
+            }
+
+            do {
+                let match = try JSONDecoder().decode(Match.self, from: data)
+                completion(match)
             } catch {
                 completion(nil)
             }

@@ -20,6 +20,8 @@ public class LolApi {
         return matchApi
     }
 
+    public static var gameConstants = GameConstantsApi()
+
     private var summonerApi = SummonerApi()
     private var matchApi = MatchApi()
 
@@ -30,5 +32,11 @@ public class LolApi {
     public init(key: String, server: LolServer) {
         self.apiKey = key
         self.server = server
+    }
+
+    public static func loadGameConstants(completion: @escaping () -> Void) {
+        GameConstants.shared.fetchData {
+            completion()
+        }
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 struct Request {
-    static func httpGet(key: String, urlString: String, completion: @escaping (_ data: Data?) -> Void) {
+    static func httpGet(key: String? = nil, urlString: String, completion: @escaping (_ data: Data?) -> Void) {
         guard let formattedUrlString = urlString.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed),
             let url = URL(string: formattedUrlString) else {
             completion(nil)
@@ -17,7 +17,9 @@ struct Request {
         }
 
         let urlConfig = URLSessionConfiguration.default
-        urlConfig.httpAdditionalHeaders = ["X-Riot-Token": key]
+        if let key = key {
+            urlConfig.httpAdditionalHeaders = ["X-Riot-Token": key]
+        }
         let session = URLSession(configuration: urlConfig)
 
         let task = session.dataTask(with: url) {(data, response, error) in

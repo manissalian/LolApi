@@ -8,4 +8,4 @@
 
 import Foundation
 
-let TESTING_API_KEY = "RGAPI-a05cbcae-1093-4d20-96de-5bd48d42369c"
+let TESTING_API_KEY = "RGAPI-718c018c-b335-4347-8c71-d55b4f068792"

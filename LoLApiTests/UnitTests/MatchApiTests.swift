@@ -136,4 +136,38 @@ class MatchApiTests: XCTestCase {
             XCTFail("Timed out")
         }
     }
+
+    func testGetAramMatchById() throws {
+        let expectMatchlist = expectation(description: "Got aram match successfully by id")
+
+        lolApi.match.getMatchById(id: "4873390416") { match in
+            if match == nil {
+                XCTFail("Error getting aram match by id")
+            }
+
+            expectMatchlist.fulfill()
+        }
+
+        let result = XCTWaiter.wait(for: [expectMatchlist], timeout: 10)
+        if result == XCTWaiter.Result.timedOut {
+            XCTFail("Timed out")
+        }
+    }
+
+    func testGetNormalMatchById() throws {
+        let expectMatchlist = expectation(description: "Got normal match successfully by id")
+
+        lolApi.match.getMatchById(id: "4728103437") { match in
+            if match == nil {
+                XCTFail("Error getting normal match by id")
+            }
+
+            expectMatchlist.fulfill()
+        }
+
+        let result = XCTWaiter.wait(for: [expectMatchlist], timeout: 10)
+        if result == XCTWaiter.Result.timedOut {
+            XCTFail("Timed out")
+        }
+    }
 }
