@@ -22,4 +22,20 @@ public struct Match: Decodable {
     public var teams: [TeamStats]
     public var participants: [Participant]
     public var participantIdentities: [ParticipantIdentity]
+
+    public init(gameId: Int, platformId: String, gameCreation: Int, gameDuration: Int, queueId: Int, mapId: Int, seasonId: Int, gameVersion: String, gameMode: String, gameType: String, teams: [TeamStats], participants: [Participant], participantIdentities: [ParticipantIdentity]) {
+        self.gameId = gameId
+        self.platformId = platformId
+        self.gameCreation = gameCreation
+        self.gameDuration = gameDuration
+        self.queueId = queueId
+        self.mapId = mapId
+        self.seasonId = seasonId
+        self.gameVersion = gameVersion
+        self.gameMode = gameMode
+        self.gameType = gameType
+        self.teams = teams
+        self.participants = participants
+        self.participantIdentities = participantIdentities
+    }
 }

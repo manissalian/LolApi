@@ -11,4 +11,9 @@ import Foundation
 public struct ParticipantIdentity: Decodable {
     public var participantId: Int
     public var player: Player
+
+    public init(participantId: Int, player: Player) {
+        self.participantId = participantId
+        self.player = player
+    }
 }

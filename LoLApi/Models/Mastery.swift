@@ -11,4 +11,9 @@ import Foundation
 public struct Mastery: Decodable {
     public var rank: Int
     public var masteryId: Int
+
+    public init(rank: Int, masteryId: Int) {
+        self.rank = rank
+        self.masteryId = masteryId
+    }
 }

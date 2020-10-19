@@ -11,4 +11,9 @@ import Foundation
 public struct TeamBans: Decodable {
     public var championId: Int
     public var pickTurn: Int
+
+    public init(championId: Int, pickTurn: Int) {
+        self.championId = championId
+        self.pickTurn = pickTurn
+    }
 }
