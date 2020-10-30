@@ -36,6 +36,9 @@
 		18588B46253C4F8C0090414A /* GameConstantsSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18588B45253C4F8C0090414A /* GameConstantsSources.swift */; };
 		18588B4A253C897D0090414A /* GameConstantsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18588B49253C897D0090414A /* GameConstantsApi.swift */; };
 		18588B4C253C8CF40090414A /* GameConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18588B4B253C8CF40090414A /* GameConstantsTests.swift */; };
+		185ACF59254C3BF70029CD94 /* ChampionMastery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185ACF58254C3BF70029CD94 /* ChampionMastery.swift */; };
+		185ACF5B254C419E0029CD94 /* ChampionMasteryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185ACF5A254C419E0029CD94 /* ChampionMasteryApi.swift */; };
+		185ACF5D254C63780029CD94 /* ChampionMasteryApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185ACF5C254C63780029CD94 /* ChampionMasteryApiTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		18588B45253C4F8C0090414A /* GameConstantsSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstantsSources.swift; sourceTree = "<group>"; };
 		18588B49253C897D0090414A /* GameConstantsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstantsApi.swift; sourceTree = "<group>"; };
 		18588B4B253C8CF40090414A /* GameConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstantsTests.swift; sourceTree = "<group>"; };
+		185ACF58254C3BF70029CD94 /* ChampionMastery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionMastery.swift; sourceTree = "<group>"; };
+		185ACF5A254C419E0029CD94 /* ChampionMasteryApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionMasteryApi.swift; sourceTree = "<group>"; };
+		185ACF5C254C63780029CD94 /* ChampionMasteryApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionMasteryApiTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 				1853FC212539DD4200301AA8 /* LolApi.swift */,
 				1853FC272539E2A000301AA8 /* SummonerApi.swift */,
 				18433CBD253AEF2A00315D1B /* MatchApi.swift */,
+				185ACF5A254C419E0029CD94 /* ChampionMasteryApi.swift */,
 				18588B49253C897D0090414A /* GameConstantsApi.swift */,
 				1853FC1D2539C85500301AA8 /* Models */,
 				184318F425366A830040F3E1 /* Network */,
@@ -160,6 +167,7 @@
 				1853FC252539DE4C00301AA8 /* ApiTests.swift */,
 				1853FC2B2539FF7000301AA8 /* SummonerApiTests.swift */,
 				18433CC3253AF33500315D1B /* MatchApiTests.swift */,
+				185ACF5C254C63780029CD94 /* ChampionMasteryApiTests.swift */,
 				18588B4B253C8CF40090414A /* GameConstantsTests.swift */,
 			);
 			path = UnitTests;
@@ -183,6 +191,7 @@
 				18433CD3253B767F00315D1B /* ParticipantStats.swift */,
 				18433CD5253B790600315D1B /* ParticipantTimeline.swift */,
 				18433CD7253B79D200315D1B /* Mastery.swift */,
+				185ACF58254C3BF70029CD94 /* ChampionMastery.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -323,9 +332,11 @@
 				18565466253E37A000E3488E /* GameConstantsModels.swift in Sources */,
 				18433CC8253B724900315D1B /* ParticipantIdentity.swift in Sources */,
 				1853FC202539C88400301AA8 /* Summoner.swift in Sources */,
+				185ACF5B254C419E0029CD94 /* ChampionMasteryApi.swift in Sources */,
 				18433CD8253B79D200315D1B /* Mastery.swift in Sources */,
 				1853FC222539DD4200301AA8 /* LolApi.swift in Sources */,
 				1853FC2A2539F18400301AA8 /* LolServer.swift in Sources */,
+				185ACF59254C3BF70029CD94 /* ChampionMastery.swift in Sources */,
 				18433CC0253AF1F100315D1B /* MatchReference.swift in Sources */,
 				18433CD4253B767F00315D1B /* ParticipantStats.swift in Sources */,
 			);
@@ -336,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18433CC4253AF33500315D1B /* MatchApiTests.swift in Sources */,
+				185ACF5D254C63780029CD94 /* ChampionMasteryApiTests.swift in Sources */,
 				1853FC2C2539FF7000301AA8 /* SummonerApiTests.swift in Sources */,
 				1853FC2E253A04A700301AA8 /* env.swift in Sources */,
 				1853FC262539DE4C00301AA8 /* ApiTests.swift in Sources */,
