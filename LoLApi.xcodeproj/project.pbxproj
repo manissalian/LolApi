@@ -42,6 +42,12 @@
 		188CA9C4254D65C30089B1B1 /* ChampionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9C3254D65C30089B1B1 /* ChampionInfo.swift */; };
 		188CA9C6254D6EC20089B1B1 /* ChampionRotationsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9C5254D6EC20089B1B1 /* ChampionRotationsApi.swift */; };
 		188CA9C8254D773E0089B1B1 /* ChampionRotationsApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9C7254D773E0089B1B1 /* ChampionRotationsApiTests.swift */; };
+		188CA9CA254D83110089B1B1 /* LeagueApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9C9254D83110089B1B1 /* LeagueApi.swift */; };
+		188CA9CC254D83510089B1B1 /* LeagueList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9CB254D83510089B1B1 /* LeagueList.swift */; };
+		188CA9CE254D86EA0089B1B1 /* MiniSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9CD254D86EA0089B1B1 /* MiniSeries.swift */; };
+		188CA9D0254D88BD0089B1B1 /* LeagueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9CF254D88BD0089B1B1 /* LeagueItem.swift */; };
+		188CA9D2254DAC440089B1B1 /* LeagueApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9D1254DAC440089B1B1 /* LeagueApiTests.swift */; };
+		188CA9D4254DD3990089B1B1 /* LeagueEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9D3254DD3990089B1B1 /* LeagueEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,12 @@
 		188CA9C3254D65C30089B1B1 /* ChampionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionInfo.swift; sourceTree = "<group>"; };
 		188CA9C5254D6EC20089B1B1 /* ChampionRotationsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionRotationsApi.swift; sourceTree = "<group>"; };
 		188CA9C7254D773E0089B1B1 /* ChampionRotationsApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionRotationsApiTests.swift; sourceTree = "<group>"; };
+		188CA9C9254D83110089B1B1 /* LeagueApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueApi.swift; sourceTree = "<group>"; };
+		188CA9CB254D83510089B1B1 /* LeagueList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueList.swift; sourceTree = "<group>"; };
+		188CA9CD254D86EA0089B1B1 /* MiniSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniSeries.swift; sourceTree = "<group>"; };
+		188CA9CF254D88BD0089B1B1 /* LeagueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueItem.swift; sourceTree = "<group>"; };
+		188CA9D1254DAC440089B1B1 /* LeagueApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueApiTests.swift; sourceTree = "<group>"; };
+		188CA9D3254DD3990089B1B1 /* LeagueEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,7 @@
 				18433CBD253AEF2A00315D1B /* MatchApi.swift */,
 				185ACF5A254C419E0029CD94 /* ChampionMasteryApi.swift */,
 				188CA9C5254D6EC20089B1B1 /* ChampionRotationsApi.swift */,
+				188CA9C9254D83110089B1B1 /* LeagueApi.swift */,
 				18588B49253C897D0090414A /* GameConstantsApi.swift */,
 				1853FC1D2539C85500301AA8 /* Models */,
 				184318F425366A830040F3E1 /* Network */,
@@ -176,6 +189,7 @@
 				18433CC3253AF33500315D1B /* MatchApiTests.swift */,
 				185ACF5C254C63780029CD94 /* ChampionMasteryApiTests.swift */,
 				188CA9C7254D773E0089B1B1 /* ChampionRotationsApiTests.swift */,
+				188CA9D1254DAC440089B1B1 /* LeagueApiTests.swift */,
 				18588B4B253C8CF40090414A /* GameConstantsTests.swift */,
 			);
 			path = UnitTests;
@@ -201,6 +215,10 @@
 				18433CD7253B79D200315D1B /* Mastery.swift */,
 				185ACF58254C3BF70029CD94 /* ChampionMastery.swift */,
 				188CA9C3254D65C30089B1B1 /* ChampionInfo.swift */,
+				188CA9CB254D83510089B1B1 /* LeagueList.swift */,
+				188CA9CF254D88BD0089B1B1 /* LeagueItem.swift */,
+				188CA9CD254D86EA0089B1B1 /* MiniSeries.swift */,
+				188CA9D3254DD3990089B1B1 /* LeagueEntry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -343,11 +361,16 @@
 				18433CC8253B724900315D1B /* ParticipantIdentity.swift in Sources */,
 				1853FC202539C88400301AA8 /* Summoner.swift in Sources */,
 				185ACF5B254C419E0029CD94 /* ChampionMasteryApi.swift in Sources */,
+				188CA9CE254D86EA0089B1B1 /* MiniSeries.swift in Sources */,
 				18433CD8253B79D200315D1B /* Mastery.swift in Sources */,
+				188CA9CA254D83110089B1B1 /* LeagueApi.swift in Sources */,
 				1853FC222539DD4200301AA8 /* LolApi.swift in Sources */,
+				188CA9CC254D83510089B1B1 /* LeagueList.swift in Sources */,
 				1853FC2A2539F18400301AA8 /* LolServer.swift in Sources */,
 				185ACF59254C3BF70029CD94 /* ChampionMastery.swift in Sources */,
 				188CA9C4254D65C30089B1B1 /* ChampionInfo.swift in Sources */,
+				188CA9D0254D88BD0089B1B1 /* LeagueItem.swift in Sources */,
+				188CA9D4254DD3990089B1B1 /* LeagueEntry.swift in Sources */,
 				18433CC0253AF1F100315D1B /* MatchReference.swift in Sources */,
 				18433CD4253B767F00315D1B /* ParticipantStats.swift in Sources */,
 			);
@@ -364,6 +387,7 @@
 				1853FC2E253A04A700301AA8 /* env.swift in Sources */,
 				1853FC262539DE4C00301AA8 /* ApiTests.swift in Sources */,
 				18588B4C253C8CF40090414A /* GameConstantsTests.swift in Sources */,
+				188CA9D2254DAC440089B1B1 /* LeagueApiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

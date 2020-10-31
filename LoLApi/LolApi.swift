@@ -27,6 +27,10 @@ public class LolApi {
         self.championRotationsApi.lolApi = self
         return self.championRotationsApi
     }
+    public var league: LeagueApi {
+        self.leagueApi.lolApi = self
+        return self.leagueApi
+    }
 
     public static var gameConstants = GameConstantsApi()
 
@@ -34,6 +38,7 @@ public class LolApi {
     private var matchApi = MatchApi()
     private var championMasteryApi = ChampionMasteryApi()
     private var championRotationsApi = ChampionRotationsApi()
+    private var leagueApi = LeagueApi()
 
     var host: String {
         return "https://\(self.server.rawValue).api.riotgames.com"
