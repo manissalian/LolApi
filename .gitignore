@@ -1,4 +1,5 @@
 .DS_Store
 LoLApi/.DS_Store
 LoLApiTests/.DS_Store
-LoLApi.xcodeproj/project.xcworkspace/xcuserdata/apple.xcuserdatad/UserInterfaceState.xcuserstate
+LoLApi.xcodeproj/project.xcworkspace/xcuserdata
+LoLApi.xcodeproj/xcuserdata
