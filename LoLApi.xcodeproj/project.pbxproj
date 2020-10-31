@@ -39,6 +39,9 @@
 		185ACF59254C3BF70029CD94 /* ChampionMastery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185ACF58254C3BF70029CD94 /* ChampionMastery.swift */; };
 		185ACF5B254C419E0029CD94 /* ChampionMasteryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185ACF5A254C419E0029CD94 /* ChampionMasteryApi.swift */; };
 		185ACF5D254C63780029CD94 /* ChampionMasteryApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185ACF5C254C63780029CD94 /* ChampionMasteryApiTests.swift */; };
+		188CA9C4254D65C30089B1B1 /* ChampionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9C3254D65C30089B1B1 /* ChampionInfo.swift */; };
+		188CA9C6254D6EC20089B1B1 /* ChampionRotationsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9C5254D6EC20089B1B1 /* ChampionRotationsApi.swift */; };
+		188CA9C8254D773E0089B1B1 /* ChampionRotationsApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CA9C7254D773E0089B1B1 /* ChampionRotationsApiTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		185ACF58254C3BF70029CD94 /* ChampionMastery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionMastery.swift; sourceTree = "<group>"; };
 		185ACF5A254C419E0029CD94 /* ChampionMasteryApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionMasteryApi.swift; sourceTree = "<group>"; };
 		185ACF5C254C63780029CD94 /* ChampionMasteryApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionMasteryApiTests.swift; sourceTree = "<group>"; };
+		188CA9C3254D65C30089B1B1 /* ChampionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionInfo.swift; sourceTree = "<group>"; };
+		188CA9C5254D6EC20089B1B1 /* ChampionRotationsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionRotationsApi.swift; sourceTree = "<group>"; };
+		188CA9C7254D773E0089B1B1 /* ChampionRotationsApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionRotationsApiTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 				1853FC272539E2A000301AA8 /* SummonerApi.swift */,
 				18433CBD253AEF2A00315D1B /* MatchApi.swift */,
 				185ACF5A254C419E0029CD94 /* ChampionMasteryApi.swift */,
+				188CA9C5254D6EC20089B1B1 /* ChampionRotationsApi.swift */,
 				18588B49253C897D0090414A /* GameConstantsApi.swift */,
 				1853FC1D2539C85500301AA8 /* Models */,
 				184318F425366A830040F3E1 /* Network */,
@@ -168,6 +175,7 @@
 				1853FC2B2539FF7000301AA8 /* SummonerApiTests.swift */,
 				18433CC3253AF33500315D1B /* MatchApiTests.swift */,
 				185ACF5C254C63780029CD94 /* ChampionMasteryApiTests.swift */,
+				188CA9C7254D773E0089B1B1 /* ChampionRotationsApiTests.swift */,
 				18588B4B253C8CF40090414A /* GameConstantsTests.swift */,
 			);
 			path = UnitTests;
@@ -192,6 +200,7 @@
 				18433CD5253B790600315D1B /* ParticipantTimeline.swift */,
 				18433CD7253B79D200315D1B /* Mastery.swift */,
 				185ACF58254C3BF70029CD94 /* ChampionMastery.swift */,
+				188CA9C3254D65C30089B1B1 /* ChampionInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18433CCC253B73B600315D1B /* TeamStats.swift in Sources */,
+				188CA9C6254D6EC20089B1B1 /* ChampionRotationsApi.swift in Sources */,
 				18433CCA253B729200315D1B /* Player.swift in Sources */,
 				1853FC282539E2A000301AA8 /* SummonerApi.swift in Sources */,
 				18433CD0253B757800315D1B /* Participant.swift in Sources */,
@@ -337,6 +347,7 @@
 				1853FC222539DD4200301AA8 /* LolApi.swift in Sources */,
 				1853FC2A2539F18400301AA8 /* LolServer.swift in Sources */,
 				185ACF59254C3BF70029CD94 /* ChampionMastery.swift in Sources */,
+				188CA9C4254D65C30089B1B1 /* ChampionInfo.swift in Sources */,
 				18433CC0253AF1F100315D1B /* MatchReference.swift in Sources */,
 				18433CD4253B767F00315D1B /* ParticipantStats.swift in Sources */,
 			);
@@ -346,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188CA9C8254D773E0089B1B1 /* ChampionRotationsApiTests.swift in Sources */,
 				18433CC4253AF33500315D1B /* MatchApiTests.swift in Sources */,
 				185ACF5D254C63780029CD94 /* ChampionMasteryApiTests.swift in Sources */,
 				1853FC2C2539FF7000301AA8 /* SummonerApiTests.swift in Sources */,

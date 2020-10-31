@@ -19,7 +19,7 @@ public struct ChampionMastery: Decodable {
     public var tokensEarned: Int
     public var summonerId: String
 
-    internal init(championId: Int, championLevel: Int, championPoints: Int, lastPlayTime: Int, championPointsSinceLastLevel: Int, championPointsUntilNextLevel: Int, chestGranted: Bool, tokensEarned: Int, summonerId: String) {
+    public init(championId: Int, championLevel: Int, championPoints: Int, lastPlayTime: Int, championPointsSinceLastLevel: Int, championPointsUntilNextLevel: Int, chestGranted: Bool, tokensEarned: Int, summonerId: String) {
         self.championId = championId
         self.championLevel = championLevel
         self.championPoints = championPoints

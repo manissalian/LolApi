@@ -23,12 +23,17 @@ public class LolApi {
         self.championMasteryApi.lolApi = self
         return self.championMasteryApi
     }
+    public var championRotations: ChampionRotationsApi {
+        self.championRotationsApi.lolApi = self
+        return self.championRotationsApi
+    }
 
     public static var gameConstants = GameConstantsApi()
 
     private var summonerApi = SummonerApi()
     private var matchApi = MatchApi()
     private var championMasteryApi = ChampionMasteryApi()
+    private var championRotationsApi = ChampionRotationsApi()
 
     var host: String {
         return "https://\(self.server.rawValue).api.riotgames.com"
