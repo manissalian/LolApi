@@ -59,6 +59,7 @@
 		188E7C79255039C400491875 /* CurrentGameParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E7C78255039C400491875 /* CurrentGameParticipant.swift */; };
 		188E7C7B2550422900491875 /* GameCustomizationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E7C7A2550422900491875 /* GameCustomizationObject.swift */; };
 		188E7C7D255046CA00491875 /* Perks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188E7C7C255046CA00491875 /* Perks.swift */; };
+		18E37BCF2572BF80000EFA73 /* QueueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E37BCE2572BF80000EFA73 /* QueueType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		188E7C78255039C400491875 /* CurrentGameParticipant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentGameParticipant.swift; sourceTree = "<group>"; };
 		188E7C7A2550422900491875 /* GameCustomizationObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCustomizationObject.swift; sourceTree = "<group>"; };
 		188E7C7C255046CA00491875 /* Perks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perks.swift; sourceTree = "<group>"; };
+		18E37BCE2572BF80000EFA73 /* QueueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 			children = (
 				1853FC1F2539C88400301AA8 /* Summoner.swift */,
 				1853FC292539F18300301AA8 /* LolServer.swift */,
+				18E37BCE2572BF80000EFA73 /* QueueType.swift */,
 				18565465253E37A000E3488E /* GameConstantsModels.swift */,
 				18433CBF253AF1F100315D1B /* MatchReference.swift */,
 				18433CC1253AF2A700315D1B /* Matchlist.swift */,
@@ -380,6 +383,7 @@
 				188E7C7B2550422900491875 /* GameCustomizationObject.swift in Sources */,
 				188E7C732550313500491875 /* SpectatorApi.swift in Sources */,
 				18433CCA253B729200315D1B /* Player.swift in Sources */,
+				18E37BCF2572BF80000EFA73 /* QueueType.swift in Sources */,
 				188E7C71255030E100491875 /* FeaturedGames.swift in Sources */,
 				188E7C6925502E5300491875 /* FeaturedParticipant.swift in Sources */,
 				1853FC282539E2A000301AA8 /* SummonerApi.swift in Sources */,

@@ -12,24 +12,24 @@ public struct LeagueApi {
     private var endPoint = "/lol/league/v4"
     weak var lolApi: LolApi?
 
-    public func getChallengerLeaguesByQueue(queue: String, completion: @escaping (_ leagueList: LeagueList?) -> Void) {
-        let path = "/challengerleagues/by-queue/\(queue)"
+    public func getChallengerLeaguesByQueue(queue: QueueType, completion: @escaping (_ leagueList: LeagueList?) -> Void) {
+        let path = "/challengerleagues/by-queue/\(queue.rawValue)"
 
         self.getLeague(path: path) { leagueList in
             completion(leagueList)
         }
     }
 
-    public func getGrandmasterLeaguesByQueue(queue: String, completion: @escaping (_ leagueList: LeagueList?) -> Void) {
-        let path = "/grandmasterleagues/by-queue/\(queue)"
+    public func getGrandmasterLeaguesByQueue(queue: QueueType, completion: @escaping (_ leagueList: LeagueList?) -> Void) {
+        let path = "/grandmasterleagues/by-queue/\(queue.rawValue)"
 
         self.getLeague(path: path) { leagueList in
             completion(leagueList)
         }
     }
 
-    public func getMasterLeaguesByQueue(queue: String, completion: @escaping (_ leagueList: LeagueList?) -> Void) {
-        let path = "/masterleagues/by-queue/\(queue)"
+    public func getMasterLeaguesByQueue(queue: QueueType, completion: @escaping (_ leagueList: LeagueList?) -> Void) {
+        let path = "/masterleagues/by-queue/\(queue.rawValue)"
 
         self.getLeague(path: path) { leagueList in
             completion(leagueList)
@@ -44,8 +44,8 @@ public struct LeagueApi {
         }
     }
 
-    public func getEntries(queue: String, tier: String, division: String, page: Int = 1, completion: @escaping (_ leagueList: [LeagueEntry]?) -> Void) {
-        let path = "/entries/\(queue)/\(tier)/\(division)?page=\(page)"
+    public func getEntries(queue: QueueType, tier: String, division: String, page: Int = 1, completion: @escaping (_ leagueList: [LeagueEntry]?) -> Void) {
+        let path = "/entries/\(queue.rawValue)/\(tier)/\(division)?page=\(page)"
 
         self.getEntries(path: path) { leagueEntry in
             completion(leagueEntry)

@@ -15,7 +15,7 @@ class LeagueApiTests: XCTestCase {
     func testGetChallengerLeaguesByQueue() throws {
         let expectChallengerLeagues = expectation(description: "Got challenger leagues successfully by queue")
 
-        lolApi.league.getChallengerLeaguesByQueue(queue: "RANKED_SOLO_5x5") { league in
+        lolApi.league.getChallengerLeaguesByQueue(queue: QueueType.SOLO) { league in
             if league == nil {
                 XCTFail("Error getting challenger leagues by queue")
             }
@@ -32,7 +32,7 @@ class LeagueApiTests: XCTestCase {
     func testGetGrandmasterLeaguesByQueue() throws {
         let expectGrandmasterLeagues = expectation(description: "Got grandmaster leagues successfully by queue")
 
-        lolApi.league.getGrandmasterLeaguesByQueue(queue: "RANKED_SOLO_5x5") { league in
+        lolApi.league.getGrandmasterLeaguesByQueue(queue: QueueType.SOLO) { league in
             if league == nil {
                 XCTFail("Error getting grandmaster leagues by queue")
             }
@@ -49,7 +49,7 @@ class LeagueApiTests: XCTestCase {
     func testGetMasterLeaguesByQueue() throws {
         let expectMasterLeagues = expectation(description: "Got master leagues successfully by queue")
 
-        lolApi.league.getMasterLeaguesByQueue(queue: "RANKED_SOLO_5x5") { league in
+        lolApi.league.getMasterLeaguesByQueue(queue: QueueType.SOLO) { league in
             if league == nil {
                 XCTFail("Error getting master leagues by queue")
             }
@@ -83,7 +83,7 @@ class LeagueApiTests: XCTestCase {
     func testGetEntries() throws {
         let expectEntries = expectation(description: "Got entries successfully")
 
-        lolApi.league.getEntries(queue: "RANKED_SOLO_5x5", tier: "DIAMOND", division: "I") { entries in
+        lolApi.league.getEntries(queue: QueueType.SOLO, tier: "DIAMOND", division: "I") { entries in
             if entries == nil {
                 XCTFail("Error getting entry by summonerId")
             }
