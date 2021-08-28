@@ -26,7 +26,7 @@ class SummonerApiTests: XCTestCase {
             expectByName.fulfill()
         }
 
-        lolApi.summoner.getSummonerByAccountId(id: "4CTJNXQHPPoZx49ph3aeffovrf9d3KQp_-2G8pDDZI3iLFs") { summoner in
+        lolApi.summoner.getSummonerByAccountId(id: TESTING_ACCOUNT_ID) { summoner in
             if summoner == nil {
                 XCTFail("Error getting summoner by account id")
             }
@@ -34,7 +34,7 @@ class SummonerApiTests: XCTestCase {
             expectByAccountId.fulfill()
         }
 
-        lolApi.summoner.getSummonerByPUUID(id: "T-3Xrxnw2pZRU6icEp2BNZJ5SmOpjhVoJHRl73htK0ZeRjtvbDjv5B2VvcPl-oeIFUndBbmx6z7vWg") { summoner in
+        lolApi.summoner.getSummonerByPUUID(id: TESTING_PUUID) { summoner in
             if summoner == nil {
                 XCTFail("Error getting summoner by puuid")
             }
@@ -42,7 +42,7 @@ class SummonerApiTests: XCTestCase {
             expectByPUUID.fulfill()
         }
 
-        lolApi.summoner.getSummonerBySummonerId(id: "Ek_o_6WjC31B24ZJtxaDjp37dO5Ksh8rGq319EyaPvHdgu0") { summoner in
+        lolApi.summoner.getSummonerBySummonerId(id: TESTING_SUMMONER_ID) { summoner in
             if summoner == nil {
                 XCTFail("Error getting summoner by puuid")
             }

@@ -46,7 +46,7 @@ public struct ChampionMasteryApi {
             return
         }
 
-        let urlString = "\(lolApi.host)/\(self.endPoint)\(path)"
+        let urlString = "\(lolApi.host)\(self.endPoint)\(path)"
 
         Request.httpGet(key: lolApi.apiKey, urlString: urlString) { data in
             guard let data = data else {
@@ -74,7 +74,7 @@ public struct ChampionMasteryApi {
             return
         }
 
-        let urlString = "\(lolApi.host)/\(self.endPoint)\(path)"
+        let urlString = "\(lolApi.host)\(self.endPoint)\(path)"
 
         Request.httpGet(key: lolApi.apiKey, urlString: urlString) { data in
             guard let data = data else {

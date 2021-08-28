@@ -15,7 +15,7 @@ class MatchApiTests: XCTestCase {
     func testGetMatchlist() throws {
         let expectMatchlist = expectation(description: "Got matchlist successfully by account id")
 
-        lolApi.match.getMatchlistByAccountId(id: "4CTJNXQHPPoZx49ph3aeffovrf9d3KQp_-2G8pDDZI3iLFs") { matchlist in
+        lolApi.match.getMatchlistByAccountId(id: TESTING_ACCOUNT_ID) { matchlist in
             if matchlist == nil {
                 XCTFail("Error getting matchlist by account id")
             }
@@ -33,7 +33,7 @@ class MatchApiTests: XCTestCase {
         let expectMatchlist = expectation(description: "Got matchlist successfully by account id with champion parameter")
         let parameters = MatchlistParameters(champion: [29, 89])
 
-        lolApi.match.getMatchlistByAccountId(id: "4CTJNXQHPPoZx49ph3aeffovrf9d3KQp_-2G8pDDZI3iLFs", parameters: parameters) { matchlist in
+        lolApi.match.getMatchlistByAccountId(id: TESTING_ACCOUNT_ID, parameters: parameters) { matchlist in
             if matchlist == nil {
                 XCTFail("Error getting matchlist by account id with champion parameter")
             }
@@ -51,7 +51,7 @@ class MatchApiTests: XCTestCase {
         let expectMatchlist = expectation(description: "Got matchlist successfully by account id with queue parameter")
         let parameters = MatchlistParameters(queue: [420, 450])
 
-        lolApi.match.getMatchlistByAccountId(id: "4CTJNXQHPPoZx49ph3aeffovrf9d3KQp_-2G8pDDZI3iLFs", parameters: parameters) { matchlist in
+        lolApi.match.getMatchlistByAccountId(id: TESTING_ACCOUNT_ID, parameters: parameters) { matchlist in
             if matchlist == nil {
                 XCTFail("Error getting matchlist by account id with queue parameter")
             }
@@ -69,7 +69,7 @@ class MatchApiTests: XCTestCase {
         let expectMatchlist = expectation(description: "Got matchlist successfully by account id with season parameter")
         let parameters = MatchlistParameters(season: [13, 14])
 
-        lolApi.match.getMatchlistByAccountId(id: "4CTJNXQHPPoZx49ph3aeffovrf9d3KQp_-2G8pDDZI3iLFs", parameters: parameters) { matchlist in
+        lolApi.match.getMatchlistByAccountId(id: TESTING_ACCOUNT_ID, parameters: parameters) { matchlist in
             if matchlist == nil {
                 XCTFail("Error getting matchlist by account id with season parameter")
             }
@@ -87,7 +87,7 @@ class MatchApiTests: XCTestCase {
         let expectMatchlist = expectation(description: "Got matchlist successfully by account id with begin and end time parameters")
         let parameters = MatchlistParameters(beginTime: 1594503204764, endTime: 1594503204764)
 
-        lolApi.match.getMatchlistByAccountId(id: "4CTJNXQHPPoZx49ph3aeffovrf9d3KQp_-2G8pDDZI3iLFs", parameters: parameters) { matchlist in
+        lolApi.match.getMatchlistByAccountId(id: TESTING_ACCOUNT_ID, parameters: parameters) { matchlist in
             if matchlist == nil {
                 XCTFail("Error getting matchlist by account id with begin and end time parameters")
             }
@@ -105,7 +105,7 @@ class MatchApiTests: XCTestCase {
         let expectMatchlist = expectation(description: "Got matchlist successfully by account id with begin index parameter")
         let parameters = MatchlistParameters(beginIndex: 1)
 
-        lolApi.match.getMatchlistByAccountId(id: "4CTJNXQHPPoZx49ph3aeffovrf9d3KQp_-2G8pDDZI3iLFs", parameters: parameters) { matchlist in
+        lolApi.match.getMatchlistByAccountId(id: TESTING_ACCOUNT_ID, parameters: parameters) { matchlist in
             if matchlist == nil {
                 XCTFail("Error getting matchlist by account id with begin index parameter")
             }
@@ -123,7 +123,7 @@ class MatchApiTests: XCTestCase {
         let expectMatchlist = expectation(description: "Got matchlist successfully by account id with end index parameter")
         let parameters = MatchlistParameters(endIndex: 1)
 
-        lolApi.match.getMatchlistByAccountId(id: "4CTJNXQHPPoZx49ph3aeffovrf9d3KQp_-2G8pDDZI3iLFs", parameters: parameters) { matchlist in
+        lolApi.match.getMatchlistByAccountId(id: TESTING_ACCOUNT_ID, parameters: parameters) { matchlist in
             if matchlist == nil {
                 XCTFail("Error getting matchlist by account id with begin and end time parameters")
             }

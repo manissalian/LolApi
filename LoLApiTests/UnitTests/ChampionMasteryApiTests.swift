@@ -15,7 +15,7 @@ class ChampionMasteryApiTests: XCTestCase {
     func testGetChampionMasteries() throws {
         let expectChampionMasteries = expectation(description: "Got champion masteries successfully by summoner id")
 
-        lolApi.championMastery.getChampionMasteriesBySummonerId(id: "Ek_o_6WjC31B24ZJtxaDjp37dO5Ksh8rGq319EyaPvHdgu0") { masteries in
+        lolApi.championMastery.getChampionMasteriesBySummonerId(id: TESTING_SUMMONER_ID) { masteries in
             if masteries == nil {
                 XCTFail("Error getting champion masteries by summoner id")
             }
@@ -32,7 +32,7 @@ class ChampionMasteryApiTests: XCTestCase {
     func testGetChampionMastery() throws {
         let expectChampionMastery = expectation(description: "Got champion mastery successfully by summoner id")
 
-        lolApi.championMastery.getChampionMasteryBySummonerId(id: "Ek_o_6WjC31B24ZJtxaDjp37dO5Ksh8rGq319EyaPvHdgu0", forChampion: 267) { mastery in
+        lolApi.championMastery.getChampionMasteryBySummonerId(id: TESTING_SUMMONER_ID, forChampion: 267) { mastery in
             if mastery == nil {
                 XCTFail("Error getting champion mastery by summoner id")
             }
@@ -49,7 +49,7 @@ class ChampionMasteryApiTests: XCTestCase {
     func testGetChampionMasteryScores() throws {
         let expectChampionMasteryScores = expectation(description: "Got champion mastery scores uccessfully by summoner id")
 
-        lolApi.championMastery.getChampionMasteryScoresBySummonerId(id: "Ek_o_6WjC31B24ZJtxaDjp37dO5Ksh8rGq319EyaPvHdgu0") { scores in
+        lolApi.championMastery.getChampionMasteryScoresBySummonerId(id: TESTING_SUMMONER_ID) { scores in
             if scores == nil {
                 XCTFail("Error getting champion mastery scores by summoner id")
             }

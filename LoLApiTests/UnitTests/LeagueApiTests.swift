@@ -100,7 +100,7 @@ class LeagueApiTests: XCTestCase {
     func testGetEntriesBySummonerId() throws {
         let expectEntries = expectation(description: "Got entries successfully by summonerId")
 
-        lolApi.league.getEntriesBySummonerId(id: "Ek_o_6WjC31B24ZJtxaDjp37dO5Ksh8rGq319EyaPvHdgu0") { entries in
+        lolApi.league.getEntriesBySummonerId(id: TESTING_SUMMONER_ID) { entries in
             if entries == nil {
                 XCTFail("Error getting entry by summonerId")
             }

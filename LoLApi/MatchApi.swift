@@ -34,7 +34,7 @@ public struct MatchApi {
             return
         }
 
-        var urlString = "\(lolApi.host)/\(self.endPoint)\(path)"
+        var urlString = "\(lolApi.host)\(self.endPoint)\(path)"
 
         if let parameters = parameters {
             urlString = parameters.addToUrl(urlString: urlString)
@@ -61,7 +61,7 @@ public struct MatchApi {
             return
         }
 
-        let urlString = "\(lolApi.host)/\(self.endPoint)\(path)"
+        let urlString = "\(lolApi.host)\(self.endPoint)\(path)"
 
         Request.httpGet(key: lolApi.apiKey, urlString: urlString) { data in
             guard let data = data else {
